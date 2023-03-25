@@ -9,15 +9,16 @@ import { handleSignin } from './controllers/signin.js';
 import { handleApiCall,handleImage } from './controllers/image.js';
 import { handleProfile } from './controllers/profile.js';
 
+  
 const db = knex({
     client: 'pg',
-    connection: {
+    // connection: {
         connection: process.env.DATABASE_URL,
         // host: 'postgres://lisha:jWMnwbN6YWHhe3K91n33dZRV5L9UMplX@dpg-cgf682ceoogqfc3pdb7g-a/smart_brain_758h',
         // user: 'lisha',
         // password: 'jWMnwbN6YWHhe3K91n33dZRV5L9UMplX',
         // database: 'smart_brain_758h'
-    }
+    // }
 });
 
 

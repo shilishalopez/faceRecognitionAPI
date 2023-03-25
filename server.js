@@ -12,10 +12,11 @@ import { handleProfile } from './controllers/profile.js';
 const db = knex({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        user: 'lisha',
-        password: 'trust',
-        database: 'smart_brain'
+        connection: process.env.DATABASE_URL,
+        // host: 'postgres://lisha:jWMnwbN6YWHhe3K91n33dZRV5L9UMplX@dpg-cgf682ceoogqfc3pdb7g-a/smart_brain_758h',
+        // user: 'lisha',
+        // password: 'jWMnwbN6YWHhe3K91n33dZRV5L9UMplX',
+        // database: 'smart_brain_758h'
     }
 });
 

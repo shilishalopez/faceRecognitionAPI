@@ -1,11 +1,12 @@
 {
-  "name": "node",
+  "name": "backend",
   "version": "1.0.0",
   "description": "Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.",
-  "main": "script.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "backend": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
